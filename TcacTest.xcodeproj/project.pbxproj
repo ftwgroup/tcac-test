@@ -1,0 +1,1084 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1D3623260D0F684500981E51 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D3623250D0F684500981E51 /* AppDelegate.m */; };
+		1D60589B0D05DD56006BFB54 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; };
+		1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
+		1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		1F766FE113BBADB100FB74C0 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1F766FDC13BBADB100FB74C0 /* Localizable.strings */; };
+		1F766FE213BBADB100FB74C0 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1F766FDF13BBADB100FB74C0 /* Localizable.strings */; };
+		288765FD0DF74451002DB57D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288765FC0DF74451002DB57D /* CoreGraphics.framework */; };
+		301BF552109A68D80062928A /* libCordova.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 301BF535109A57CC0062928A /* libCordova.a */; };
+		301BF570109A69640062928A /* www in Resources */ = {isa = PBXBuildFile; fileRef = 301BF56E109A69640062928A /* www */; };
+		301BF5B5109A6A2B0062928A /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 301BF5B4109A6A2B0062928A /* AddressBook.framework */; };
+		301BF5B7109A6A2B0062928A /* AddressBookUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 301BF5B6109A6A2B0062928A /* AddressBookUI.framework */; };
+		301BF5B9109A6A2B0062928A /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 301BF5B8109A6A2B0062928A /* AudioToolbox.framework */; };
+		301BF5BB109A6A2B0062928A /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 301BF5BA109A6A2B0062928A /* AVFoundation.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		301BF5BD109A6A2B0062928A /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 301BF5BC109A6A2B0062928A /* CFNetwork.framework */; };
+		301BF5BF109A6A2B0062928A /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 301BF5BE109A6A2B0062928A /* CoreLocation.framework */; };
+		301BF5C1109A6A2B0062928A /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 301BF5C0109A6A2B0062928A /* MediaPlayer.framework */; };
+		301BF5C3109A6A2B0062928A /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 301BF5C2109A6A2B0062928A /* QuartzCore.framework */; };
+		301BF5C5109A6A2B0062928A /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 301BF5C4109A6A2B0062928A /* SystemConfiguration.framework */; };
+		302D95F114D2391D003F00A1 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 302D95EF14D2391D003F00A1 /* MainViewController.m */; };
+		302D95F214D2391D003F00A1 /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 302D95F014D2391D003F00A1 /* MainViewController.xib */; };
+		3053AC6F109B7857006FCFE7 /* VERSION in Resources */ = {isa = PBXBuildFile; fileRef = 3053AC6E109B7857006FCFE7 /* VERSION */; };
+		305D5FD1115AB8F900A74A75 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 305D5FD0115AB8F900A74A75 /* MobileCoreServices.framework */; };
+		3072F99713A8081B00425683 /* Capture.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 3072F99613A8081B00425683 /* Capture.bundle */; };
+		3088BBBD154F3926009F9C59 /* Default-Landscape@2x~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = 3088BBB7154F3926009F9C59 /* Default-Landscape@2x~ipad.png */; };
+		3088BBBE154F3926009F9C59 /* Default-Landscape~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = 3088BBB8154F3926009F9C59 /* Default-Landscape~ipad.png */; };
+		3088BBBF154F3926009F9C59 /* Default-Portrait@2x~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = 3088BBB9154F3926009F9C59 /* Default-Portrait@2x~ipad.png */; };
+		3088BBC0154F3926009F9C59 /* Default-Portrait~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = 3088BBBA154F3926009F9C59 /* Default-Portrait~ipad.png */; };
+		3088BBC1154F3926009F9C59 /* Default@2x~iphone.png in Resources */ = {isa = PBXBuildFile; fileRef = 3088BBBB154F3926009F9C59 /* Default@2x~iphone.png */; };
+		3088BBC2154F3926009F9C59 /* Default~iphone.png in Resources */ = {isa = PBXBuildFile; fileRef = 3088BBBC154F3926009F9C59 /* Default~iphone.png */; };
+		308D05371370CCF300D202BF /* icon-72.png in Resources */ = {isa = PBXBuildFile; fileRef = 308D052E1370CCF300D202BF /* icon-72.png */; };
+		308D05381370CCF300D202BF /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 308D052F1370CCF300D202BF /* icon.png */; };
+		308D05391370CCF300D202BF /* icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 308D05301370CCF300D202BF /* icon@2x.png */; };
+		30A0434814DC770100060A13 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 30A0434314DC770100060A13 /* Localizable.strings */; };
+		30A0434914DC770100060A13 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 30A0434614DC770100060A13 /* Localizable.strings */; };
+		30E1352710E2C1420031B30D /* Cordova.plist in Resources */ = {isa = PBXBuildFile; fileRef = 30E1352610E2C1420031B30D /* Cordova.plist */; };
+		30E5649213A7FCAF007403D8 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30E5649113A7FCAF007403D8 /* CoreMedia.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		B939A35615FECCF900DC111F /* EventKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B939A35415FECCF900DC111F /* EventKit.framework */; };
+		B939A35715FECCF900DC111F /* EventKitUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B939A35515FECCF900DC111F /* EventKitUI.framework */; };
+		B939A35D15FECD7200DC111F /* calendar.js in Sources */ = {isa = PBXBuildFile; fileRef = B939A35915FECD7200DC111F /* calendar.js */; };
+		B939A35E15FECD7200DC111F /* calendarPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = B939A35B15FECD7200DC111F /* calendarPlugin.m */; };
+		B939A35F15FECD7200DC111F /* README in Resources */ = {isa = PBXBuildFile; fileRef = B939A35C15FECD7200DC111F /* README */; };
+		B9E7522215FFE929007542EF /* FacebookConnectPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = B9E7522115FFE929007542EF /* FacebookConnectPlugin.m */; };
+		B9E7523E15FFED74007542EF /* Facebook.m in Sources */ = {isa = PBXBuildFile; fileRef = B9E7522515FFED74007542EF /* Facebook.m */; };
+		B9E7523F15FFED74007542EF /* FBDialog.bundle in Resources */ = {isa = PBXBuildFile; fileRef = B9E7522715FFED74007542EF /* FBDialog.bundle */; };
+		B9E7524015FFED74007542EF /* FBDialog.m in Sources */ = {isa = PBXBuildFile; fileRef = B9E7522915FFED74007542EF /* FBDialog.m */; };
+		B9E7524115FFED74007542EF /* FBFrictionlessRequestSettings.m in Sources */ = {isa = PBXBuildFile; fileRef = B9E7522B15FFED74007542EF /* FBFrictionlessRequestSettings.m */; };
+		B9E7524215FFED74007542EF /* FBLoginDialog.m in Sources */ = {isa = PBXBuildFile; fileRef = B9E7522D15FFED74007542EF /* FBLoginDialog.m */; };
+		B9E7524315FFED74007542EF /* FBRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = B9E7522F15FFED74007542EF /* FBRequest.m */; };
+		B9E7524415FFED74007542EF /* NSObject+SBJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = B9E7523315FFED74007542EF /* NSObject+SBJSON.m */; };
+		B9E7524515FFED74007542EF /* NSString+SBJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = B9E7523515FFED74007542EF /* NSString+SBJSON.m */; };
+		B9E7524615FFED74007542EF /* SBJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = B9E7523715FFED74007542EF /* SBJSON.m */; };
+		B9E7524715FFED74007542EF /* SBJsonBase.m in Sources */ = {isa = PBXBuildFile; fileRef = B9E7523915FFED74007542EF /* SBJsonBase.m */; };
+		B9E7524815FFED74007542EF /* SBJsonParser.m in Sources */ = {isa = PBXBuildFile; fileRef = B9E7523B15FFED74007542EF /* SBJsonParser.m */; };
+		B9E7524915FFED74007542EF /* SBJsonWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = B9E7523D15FFED74007542EF /* SBJsonWriter.m */; };
+		B9E95FBD15FE97830040BD3C /* demo.js in Sources */ = {isa = PBXBuildFile; fileRef = B9E95F7C15FE97830040BD3C /* demo.js */; };
+		B9E95FBE15FE97830040BD3C /* index.html in Resources */ = {isa = PBXBuildFile; fileRef = B9E95F7D15FE97830040BD3C /* index.html */; };
+		B9E95FBF15FE97830040BD3C /* ninja-lolcat.gif in Resources */ = {isa = PBXBuildFile; fileRef = B9E95F7E15FE97830040BD3C /* ninja-lolcat.gif */; };
+		B9E95FC015FE97830040BD3C /* config.xml in Resources */ = {isa = PBXBuildFile; fileRef = B9E95F8015FE97830040BD3C /* config.xml */; };
+		B9E95FC115FE97830040BD3C /* cordova-2.0.0.js in Sources */ = {isa = PBXBuildFile; fileRef = B9E95F8115FE97830040BD3C /* cordova-2.0.0.js */; };
+		B9E95FC215FE97830040BD3C /* index.css in Resources */ = {isa = PBXBuildFile; fileRef = B9E95F8315FE97830040BD3C /* index.css */; };
+		B9E95FC315FE97830040BD3C /* demo.js in Sources */ = {isa = PBXBuildFile; fileRef = B9E95F8415FE97830040BD3C /* demo.js */; };
+		B9E95FC415FE97830040BD3C /* cordova.png in Resources */ = {isa = PBXBuildFile; fileRef = B9E95F8615FE97830040BD3C /* cordova.png */; };
+		B9E95FC515FE97830040BD3C /* index.html in Resources */ = {isa = PBXBuildFile; fileRef = B9E95F8715FE97830040BD3C /* index.html */; };
+		B9E95FC615FE97830040BD3C /* index.js in Sources */ = {isa = PBXBuildFile; fileRef = B9E95F8915FE97830040BD3C /* index.js */; };
+		B9E95FC715FE97830040BD3C /* ninja-lolcat.gif in Resources */ = {isa = PBXBuildFile; fileRef = B9E95F8A15FE97830040BD3C /* ninja-lolcat.gif */; };
+		B9E95FC815FE97830040BD3C /* cordova_128.png in Resources */ = {isa = PBXBuildFile; fileRef = B9E95F8D15FE97830040BD3C /* cordova_128.png */; };
+		B9E95FC915FE97830040BD3C /* cordova_16.png in Resources */ = {isa = PBXBuildFile; fileRef = B9E95F8E15FE97830040BD3C /* cordova_16.png */; };
+		B9E95FCA15FE97830040BD3C /* cordova_24.png in Resources */ = {isa = PBXBuildFile; fileRef = B9E95F8F15FE97830040BD3C /* cordova_24.png */; };
+		B9E95FCB15FE97830040BD3C /* cordova_256.png in Resources */ = {isa = PBXBuildFile; fileRef = B9E95F9015FE97830040BD3C /* cordova_256.png */; };
+		B9E95FCC15FE97830040BD3C /* cordova_32.png in Resources */ = {isa = PBXBuildFile; fileRef = B9E95F9115FE97830040BD3C /* cordova_32.png */; };
+		B9E95FCD15FE97830040BD3C /* cordova_48.png in Resources */ = {isa = PBXBuildFile; fileRef = B9E95F9215FE97830040BD3C /* cordova_48.png */; };
+		B9E95FCE15FE97830040BD3C /* cordova_512.png in Resources */ = {isa = PBXBuildFile; fileRef = B9E95F9315FE97830040BD3C /* cordova_512.png */; };
+		B9E95FCF15FE97830040BD3C /* cordova_64.png in Resources */ = {isa = PBXBuildFile; fileRef = B9E95F9415FE97830040BD3C /* cordova_64.png */; };
+		B9E95FD015FE97830040BD3C /* cordova_android_36.png in Resources */ = {isa = PBXBuildFile; fileRef = B9E95F9515FE97830040BD3C /* cordova_android_36.png */; };
+		B9E95FD115FE97830040BD3C /* cordova_android_48.png in Resources */ = {isa = PBXBuildFile; fileRef = B9E95F9615FE97830040BD3C /* cordova_android_48.png */; };
+		B9E95FD215FE97830040BD3C /* cordova_android_72.png in Resources */ = {isa = PBXBuildFile; fileRef = B9E95F9715FE97830040BD3C /* cordova_android_72.png */; };
+		B9E95FD315FE97830040BD3C /* cordova_android_96.png in Resources */ = {isa = PBXBuildFile; fileRef = B9E95F9815FE97830040BD3C /* cordova_android_96.png */; };
+		B9E95FD415FE97830040BD3C /* cordova_bb_80.png in Resources */ = {isa = PBXBuildFile; fileRef = B9E95F9915FE97830040BD3C /* cordova_bb_80.png */; };
+		B9E95FD515FE97830040BD3C /* cordova_ios_114.png in Resources */ = {isa = PBXBuildFile; fileRef = B9E95F9A15FE97830040BD3C /* cordova_ios_114.png */; };
+		B9E95FD615FE97830040BD3C /* cordova_ios_144.png in Resources */ = {isa = PBXBuildFile; fileRef = B9E95F9B15FE97830040BD3C /* cordova_ios_144.png */; };
+		B9E95FD715FE97830040BD3C /* cordova_ios_57.png in Resources */ = {isa = PBXBuildFile; fileRef = B9E95F9C15FE97830040BD3C /* cordova_ios_57.png */; };
+		B9E95FD815FE97830040BD3C /* cordova_ios_72.png in Resources */ = {isa = PBXBuildFile; fileRef = B9E95F9D15FE97830040BD3C /* cordova_ios_72.png */; };
+		B9E95FD915FE97830040BD3C /* android_hdpi_landscape.png in Resources */ = {isa = PBXBuildFile; fileRef = B9E95F9F15FE97830040BD3C /* android_hdpi_landscape.png */; };
+		B9E95FDA15FE97830040BD3C /* android_hdpi_portrait.png in Resources */ = {isa = PBXBuildFile; fileRef = B9E95FA015FE97830040BD3C /* android_hdpi_portrait.png */; };
+		B9E95FDB15FE97830040BD3C /* android_ldpi_landscape.png in Resources */ = {isa = PBXBuildFile; fileRef = B9E95FA115FE97830040BD3C /* android_ldpi_landscape.png */; };
+		B9E95FDC15FE97830040BD3C /* android_ldpi_portrait.png in Resources */ = {isa = PBXBuildFile; fileRef = B9E95FA215FE97830040BD3C /* android_ldpi_portrait.png */; };
+		B9E95FDD15FE97830040BD3C /* android_mdpi_landscape.png in Resources */ = {isa = PBXBuildFile; fileRef = B9E95FA315FE97830040BD3C /* android_mdpi_landscape.png */; };
+		B9E95FDE15FE97830040BD3C /* android_mdpi_portrait.png in Resources */ = {isa = PBXBuildFile; fileRef = B9E95FA415FE97830040BD3C /* android_mdpi_portrait.png */; };
+		B9E95FDF15FE97830040BD3C /* android_xhdpi_landscape.png in Resources */ = {isa = PBXBuildFile; fileRef = B9E95FA515FE97830040BD3C /* android_xhdpi_landscape.png */; };
+		B9E95FE015FE97830040BD3C /* android_xhdpi_portrait.png in Resources */ = {isa = PBXBuildFile; fileRef = B9E95FA615FE97830040BD3C /* android_xhdpi_portrait.png */; };
+		B9E95FE115FE97830040BD3C /* blackberry_transparent_300.png in Resources */ = {isa = PBXBuildFile; fileRef = B9E95FA715FE97830040BD3C /* blackberry_transparent_300.png */; };
+		B9E95FE215FE97830040BD3C /* blackberry_transparent_400.png in Resources */ = {isa = PBXBuildFile; fileRef = B9E95FA815FE97830040BD3C /* blackberry_transparent_400.png */; };
+		B9E95FE315FE97830040BD3C /* ipad_landscape.png in Resources */ = {isa = PBXBuildFile; fileRef = B9E95FA915FE97830040BD3C /* ipad_landscape.png */; };
+		B9E95FE415FE97830040BD3C /* ipad_portrait.png in Resources */ = {isa = PBXBuildFile; fileRef = B9E95FAA15FE97830040BD3C /* ipad_portrait.png */; };
+		B9E95FE515FE97830040BD3C /* ipad_retina_landscape.png in Resources */ = {isa = PBXBuildFile; fileRef = B9E95FAB15FE97830040BD3C /* ipad_retina_landscape.png */; };
+		B9E95FE615FE97830040BD3C /* ipad_retina_portrait.png in Resources */ = {isa = PBXBuildFile; fileRef = B9E95FAC15FE97830040BD3C /* ipad_retina_portrait.png */; };
+		B9E95FE715FE97830040BD3C /* iphone_landscape.png in Resources */ = {isa = PBXBuildFile; fileRef = B9E95FAD15FE97830040BD3C /* iphone_landscape.png */; };
+		B9E95FE815FE97830040BD3C /* iphone_portrait.png in Resources */ = {isa = PBXBuildFile; fileRef = B9E95FAE15FE97830040BD3C /* iphone_portrait.png */; };
+		B9E95FE915FE97830040BD3C /* iphone_retina_landscape.png in Resources */ = {isa = PBXBuildFile; fileRef = B9E95FAF15FE97830040BD3C /* iphone_retina_landscape.png */; };
+		B9E95FEA15FE97830040BD3C /* iphone_retina_portrait.png in Resources */ = {isa = PBXBuildFile; fileRef = B9E95FB015FE97830040BD3C /* iphone_retina_portrait.png */; };
+		B9E95FEB15FE97830040BD3C /* windows_phone_portrait.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B9E95FB115FE97830040BD3C /* windows_phone_portrait.jpg */; };
+		B9E95FEC15FE97830040BD3C /* helper.js in Sources */ = {isa = PBXBuildFile; fileRef = B9E95FB315FE97830040BD3C /* helper.js */; };
+		B9E95FED15FE97830040BD3C /* index.js in Sources */ = {isa = PBXBuildFile; fileRef = B9E95FB415FE97830040BD3C /* index.js */; };
+		B9E95FEE15FE97830040BD3C /* spec.html in Resources */ = {isa = PBXBuildFile; fileRef = B9E95FB515FE97830040BD3C /* spec.html */; };
+		B9E95FEF15FE97830040BD3C /* TwitterPlugin.js in Sources */ = {isa = PBXBuildFile; fileRef = B9E95FB615FE97830040BD3C /* TwitterPlugin.js */; };
+		B9E95FF015FE97830040BD3C /* TwitterPlugin.js in Sources */ = {isa = PBXBuildFile; fileRef = B9E95FB815FE97830040BD3C /* TwitterPlugin.js */; };
+		B9E95FF115FE97830040BD3C /* LICENSE.md in Resources */ = {isa = PBXBuildFile; fileRef = B9E95FB915FE97830040BD3C /* LICENSE.md */; };
+		B9E95FF215FE97830040BD3C /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = B9E95FBA15FE97830040BD3C /* README.md */; };
+		B9E95FF315FE97830040BD3C /* TwitterPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = B9E95FBC15FE97830040BD3C /* TwitterPlugin.m */; };
+		B9E95FF515FE98B20040BD3C /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9E95FF415FE98B20040BD3C /* Accounts.framework */; };
+		B9E95FF715FE98D00040BD3C /* Twitter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9E95FF615FE98D00040BD3C /* Twitter.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		301BF534109A57CC0062928A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 301BF52D109A57CC0062928A /* CordovaLib.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D2AAC07E0554694100DB518D;
+			remoteInfo = CordovaLib;
+		};
+		301BF550109A68C00062928A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 301BF52D109A57CC0062928A /* CordovaLib.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = D2AAC07D0554694100DB518D;
+			remoteInfo = CordovaLib;
+		};
+		302D95EB14D23909003F00A1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 301BF52D109A57CC0062928A /* CordovaLib.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 686357A9141002F100DF4CF2;
+			remoteInfo = CordovaLibTests;
+		};
+		3088BBB4154F38EF009F9C59 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 301BF52D109A57CC0062928A /* CordovaLib.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 303A4068152124BB00182201;
+			remoteInfo = CordovaLibApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1D30AB110D05D00D00671497 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		1D3623240D0F684500981E51 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		1D3623250D0F684500981E51 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		1D6058910D05DD3D006BFB54 /* TcacTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TcacTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1DF5F4DF0D08C38300B7A737 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		1F766FDD13BBADB100FB74C0 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = Localizable.strings; sourceTree = "<group>"; };
+		1F766FE013BBADB100FB74C0 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = Localizable.strings; sourceTree = "<group>"; };
+		288765FC0DF74451002DB57D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		301BF52D109A57CC0062928A /* CordovaLib.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = CordovaLib.xcodeproj; sourceTree = CORDOVALIB; };
+		301BF56E109A69640062928A /* www */ = {isa = PBXFileReference; lastKnownFileType = folder; path = www; sourceTree = SOURCE_ROOT; };
+		301BF5B4109A6A2B0062928A /* AddressBook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBook.framework; path = System/Library/Frameworks/AddressBook.framework; sourceTree = SDKROOT; };
+		301BF5B6109A6A2B0062928A /* AddressBookUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBookUI.framework; path = System/Library/Frameworks/AddressBookUI.framework; sourceTree = SDKROOT; };
+		301BF5B8109A6A2B0062928A /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		301BF5BA109A6A2B0062928A /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		301BF5BC109A6A2B0062928A /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		301BF5BE109A6A2B0062928A /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		301BF5C0109A6A2B0062928A /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		301BF5C2109A6A2B0062928A /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		301BF5C4109A6A2B0062928A /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		302D95EE14D2391D003F00A1 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		302D95EF14D2391D003F00A1 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		302D95F014D2391D003F00A1 /* MainViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
+		3053AC6E109B7857006FCFE7 /* VERSION */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = VERSION; sourceTree = CORDOVALIB; };
+		305D5FD0115AB8F900A74A75 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		3072F99613A8081B00425683 /* Capture.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Capture.bundle; sourceTree = "<group>"; };
+		307D28A1123043350040C0FA /* CordovaBuildSettings.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = CordovaBuildSettings.xcconfig; path = ../CordovaBuildSettings.xcconfig; sourceTree = "<group>"; };
+		3088BBB7154F3926009F9C59 /* Default-Landscape@2x~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-Landscape@2x~ipad.png"; sourceTree = "<group>"; };
+		3088BBB8154F3926009F9C59 /* Default-Landscape~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-Landscape~ipad.png"; sourceTree = "<group>"; };
+		3088BBB9154F3926009F9C59 /* Default-Portrait@2x~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-Portrait@2x~ipad.png"; sourceTree = "<group>"; };
+		3088BBBA154F3926009F9C59 /* Default-Portrait~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-Portrait~ipad.png"; sourceTree = "<group>"; };
+		3088BBBB154F3926009F9C59 /* Default@2x~iphone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x~iphone.png"; sourceTree = "<group>"; };
+		3088BBBC154F3926009F9C59 /* Default~iphone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default~iphone.png"; sourceTree = "<group>"; };
+		308D052E1370CCF300D202BF /* icon-72.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-72.png"; sourceTree = "<group>"; };
+		308D052F1370CCF300D202BF /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
+		308D05301370CCF300D202BF /* icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon@2x.png"; sourceTree = "<group>"; };
+		30A0434414DC770100060A13 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = Localizable.strings; sourceTree = "<group>"; };
+		30A0434714DC770100060A13 /* se */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = se; path = Localizable.strings; sourceTree = "<group>"; };
+		30E1352610E2C1420031B30D /* Cordova.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Cordova.plist; path = ../Cordova.plist; sourceTree = "<group>"; };
+		30E5649113A7FCAF007403D8 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		32CA4F630368D1EE00C91783 /* TcacTest-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "TcacTest-Prefix.pch"; sourceTree = "<group>"; };
+		8D1107310486CEB800E47090 /* TcacTest-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "TcacTest-Info.plist"; path = "../TcacTest-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
+		B939A35415FECCF900DC111F /* EventKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EventKit.framework; path = System/Library/Frameworks/EventKit.framework; sourceTree = SDKROOT; };
+		B939A35515FECCF900DC111F /* EventKitUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EventKitUI.framework; path = System/Library/Frameworks/EventKitUI.framework; sourceTree = SDKROOT; };
+		B939A35915FECD7200DC111F /* calendar.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = calendar.js; sourceTree = "<group>"; };
+		B939A35A15FECD7200DC111F /* calendarPlugin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = calendarPlugin.h; sourceTree = "<group>"; };
+		B939A35B15FECD7200DC111F /* calendarPlugin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = calendarPlugin.m; sourceTree = "<group>"; };
+		B939A35C15FECD7200DC111F /* README */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README; sourceTree = "<group>"; };
+		B9E7522015FFE929007542EF /* FacebookConnectPlugin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FacebookConnectPlugin.h; sourceTree = "<group>"; };
+		B9E7522115FFE929007542EF /* FacebookConnectPlugin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FacebookConnectPlugin.m; sourceTree = "<group>"; };
+		B9E7522415FFED74007542EF /* Facebook.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Facebook.h; sourceTree = "<group>"; };
+		B9E7522515FFED74007542EF /* Facebook.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Facebook.m; sourceTree = "<group>"; };
+		B9E7522615FFED74007542EF /* FBConnect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBConnect.h; sourceTree = "<group>"; };
+		B9E7522715FFED74007542EF /* FBDialog.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = FBDialog.bundle; sourceTree = "<group>"; };
+		B9E7522815FFED74007542EF /* FBDialog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBDialog.h; sourceTree = "<group>"; };
+		B9E7522915FFED74007542EF /* FBDialog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FBDialog.m; sourceTree = "<group>"; };
+		B9E7522A15FFED74007542EF /* FBFrictionlessRequestSettings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBFrictionlessRequestSettings.h; sourceTree = "<group>"; };
+		B9E7522B15FFED74007542EF /* FBFrictionlessRequestSettings.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FBFrictionlessRequestSettings.m; sourceTree = "<group>"; };
+		B9E7522C15FFED74007542EF /* FBLoginDialog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBLoginDialog.h; sourceTree = "<group>"; };
+		B9E7522D15FFED74007542EF /* FBLoginDialog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FBLoginDialog.m; sourceTree = "<group>"; };
+		B9E7522E15FFED74007542EF /* FBRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBRequest.h; sourceTree = "<group>"; };
+		B9E7522F15FFED74007542EF /* FBRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FBRequest.m; sourceTree = "<group>"; };
+		B9E7523115FFED74007542EF /* JSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSON.h; sourceTree = "<group>"; };
+		B9E7523215FFED74007542EF /* NSObject+SBJSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+SBJSON.h"; sourceTree = "<group>"; };
+		B9E7523315FFED74007542EF /* NSObject+SBJSON.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+SBJSON.m"; sourceTree = "<group>"; };
+		B9E7523415FFED74007542EF /* NSString+SBJSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+SBJSON.h"; sourceTree = "<group>"; };
+		B9E7523515FFED74007542EF /* NSString+SBJSON.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+SBJSON.m"; sourceTree = "<group>"; };
+		B9E7523615FFED74007542EF /* SBJSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJSON.h; sourceTree = "<group>"; };
+		B9E7523715FFED74007542EF /* SBJSON.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJSON.m; sourceTree = "<group>"; };
+		B9E7523815FFED74007542EF /* SBJsonBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonBase.h; sourceTree = "<group>"; };
+		B9E7523915FFED74007542EF /* SBJsonBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonBase.m; sourceTree = "<group>"; };
+		B9E7523A15FFED74007542EF /* SBJsonParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonParser.h; sourceTree = "<group>"; };
+		B9E7523B15FFED74007542EF /* SBJsonParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonParser.m; sourceTree = "<group>"; };
+		B9E7523C15FFED74007542EF /* SBJsonWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonWriter.h; sourceTree = "<group>"; };
+		B9E7523D15FFED74007542EF /* SBJsonWriter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonWriter.m; sourceTree = "<group>"; };
+		B9E95F7C15FE97830040BD3C /* demo.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = demo.js; sourceTree = "<group>"; };
+		B9E95F7D15FE97830040BD3C /* index.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = index.html; sourceTree = "<group>"; };
+		B9E95F7E15FE97830040BD3C /* ninja-lolcat.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "ninja-lolcat.gif"; sourceTree = "<group>"; };
+		B9E95F8015FE97830040BD3C /* config.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = config.xml; sourceTree = "<group>"; };
+		B9E95F8115FE97830040BD3C /* cordova-2.0.0.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = "cordova-2.0.0.js"; sourceTree = "<group>"; };
+		B9E95F8315FE97830040BD3C /* index.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = index.css; sourceTree = "<group>"; };
+		B9E95F8415FE97830040BD3C /* demo.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = demo.js; sourceTree = "<group>"; };
+		B9E95F8615FE97830040BD3C /* cordova.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cordova.png; sourceTree = "<group>"; };
+		B9E95F8715FE97830040BD3C /* index.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = index.html; sourceTree = "<group>"; };
+		B9E95F8915FE97830040BD3C /* index.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = index.js; sourceTree = "<group>"; };
+		B9E95F8A15FE97830040BD3C /* ninja-lolcat.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "ninja-lolcat.gif"; sourceTree = "<group>"; };
+		B9E95F8D15FE97830040BD3C /* cordova_128.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cordova_128.png; sourceTree = "<group>"; };
+		B9E95F8E15FE97830040BD3C /* cordova_16.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cordova_16.png; sourceTree = "<group>"; };
+		B9E95F8F15FE97830040BD3C /* cordova_24.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cordova_24.png; sourceTree = "<group>"; };
+		B9E95F9015FE97830040BD3C /* cordova_256.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cordova_256.png; sourceTree = "<group>"; };
+		B9E95F9115FE97830040BD3C /* cordova_32.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cordova_32.png; sourceTree = "<group>"; };
+		B9E95F9215FE97830040BD3C /* cordova_48.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cordova_48.png; sourceTree = "<group>"; };
+		B9E95F9315FE97830040BD3C /* cordova_512.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cordova_512.png; sourceTree = "<group>"; };
+		B9E95F9415FE97830040BD3C /* cordova_64.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cordova_64.png; sourceTree = "<group>"; };
+		B9E95F9515FE97830040BD3C /* cordova_android_36.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cordova_android_36.png; sourceTree = "<group>"; };
+		B9E95F9615FE97830040BD3C /* cordova_android_48.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cordova_android_48.png; sourceTree = "<group>"; };
+		B9E95F9715FE97830040BD3C /* cordova_android_72.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cordova_android_72.png; sourceTree = "<group>"; };
+		B9E95F9815FE97830040BD3C /* cordova_android_96.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cordova_android_96.png; sourceTree = "<group>"; };
+		B9E95F9915FE97830040BD3C /* cordova_bb_80.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cordova_bb_80.png; sourceTree = "<group>"; };
+		B9E95F9A15FE97830040BD3C /* cordova_ios_114.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cordova_ios_114.png; sourceTree = "<group>"; };
+		B9E95F9B15FE97830040BD3C /* cordova_ios_144.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cordova_ios_144.png; sourceTree = "<group>"; };
+		B9E95F9C15FE97830040BD3C /* cordova_ios_57.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cordova_ios_57.png; sourceTree = "<group>"; };
+		B9E95F9D15FE97830040BD3C /* cordova_ios_72.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cordova_ios_72.png; sourceTree = "<group>"; };
+		B9E95F9F15FE97830040BD3C /* android_hdpi_landscape.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = android_hdpi_landscape.png; sourceTree = "<group>"; };
+		B9E95FA015FE97830040BD3C /* android_hdpi_portrait.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = android_hdpi_portrait.png; sourceTree = "<group>"; };
+		B9E95FA115FE97830040BD3C /* android_ldpi_landscape.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = android_ldpi_landscape.png; sourceTree = "<group>"; };
+		B9E95FA215FE97830040BD3C /* android_ldpi_portrait.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = android_ldpi_portrait.png; sourceTree = "<group>"; };
+		B9E95FA315FE97830040BD3C /* android_mdpi_landscape.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = android_mdpi_landscape.png; sourceTree = "<group>"; };
+		B9E95FA415FE97830040BD3C /* android_mdpi_portrait.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = android_mdpi_portrait.png; sourceTree = "<group>"; };
+		B9E95FA515FE97830040BD3C /* android_xhdpi_landscape.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = android_xhdpi_landscape.png; sourceTree = "<group>"; };
+		B9E95FA615FE97830040BD3C /* android_xhdpi_portrait.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = android_xhdpi_portrait.png; sourceTree = "<group>"; };
+		B9E95FA715FE97830040BD3C /* blackberry_transparent_300.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = blackberry_transparent_300.png; sourceTree = "<group>"; };
+		B9E95FA815FE97830040BD3C /* blackberry_transparent_400.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = blackberry_transparent_400.png; sourceTree = "<group>"; };
+		B9E95FA915FE97830040BD3C /* ipad_landscape.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ipad_landscape.png; sourceTree = "<group>"; };
+		B9E95FAA15FE97830040BD3C /* ipad_portrait.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ipad_portrait.png; sourceTree = "<group>"; };
+		B9E95FAB15FE97830040BD3C /* ipad_retina_landscape.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ipad_retina_landscape.png; sourceTree = "<group>"; };
+		B9E95FAC15FE97830040BD3C /* ipad_retina_portrait.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ipad_retina_portrait.png; sourceTree = "<group>"; };
+		B9E95FAD15FE97830040BD3C /* iphone_landscape.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = iphone_landscape.png; sourceTree = "<group>"; };
+		B9E95FAE15FE97830040BD3C /* iphone_portrait.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = iphone_portrait.png; sourceTree = "<group>"; };
+		B9E95FAF15FE97830040BD3C /* iphone_retina_landscape.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = iphone_retina_landscape.png; sourceTree = "<group>"; };
+		B9E95FB015FE97830040BD3C /* iphone_retina_portrait.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = iphone_retina_portrait.png; sourceTree = "<group>"; };
+		B9E95FB115FE97830040BD3C /* windows_phone_portrait.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = windows_phone_portrait.jpg; sourceTree = "<group>"; };
+		B9E95FB315FE97830040BD3C /* helper.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = helper.js; sourceTree = "<group>"; };
+		B9E95FB415FE97830040BD3C /* index.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = index.js; sourceTree = "<group>"; };
+		B9E95FB515FE97830040BD3C /* spec.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = spec.html; sourceTree = "<group>"; };
+		B9E95FB615FE97830040BD3C /* TwitterPlugin.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = TwitterPlugin.js; sourceTree = "<group>"; };
+		B9E95FB815FE97830040BD3C /* TwitterPlugin.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = TwitterPlugin.js; sourceTree = "<group>"; };
+		B9E95FB915FE97830040BD3C /* LICENSE.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE.md; sourceTree = "<group>"; };
+		B9E95FBA15FE97830040BD3C /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
+		B9E95FBB15FE97830040BD3C /* TwitterPlugin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TwitterPlugin.h; sourceTree = "<group>"; };
+		B9E95FBC15FE97830040BD3C /* TwitterPlugin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TwitterPlugin.m; sourceTree = "<group>"; };
+		B9E95FF415FE98B20040BD3C /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
+		B9E95FF615FE98D00040BD3C /* Twitter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Twitter.framework; path = System/Library/Frameworks/Twitter.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1D60588F0D05DD3D006BFB54 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B939A35615FECCF900DC111F /* EventKit.framework in Frameworks */,
+				B939A35715FECCF900DC111F /* EventKitUI.framework in Frameworks */,
+				B9E95FF715FE98D00040BD3C /* Twitter.framework in Frameworks */,
+				B9E95FF515FE98B20040BD3C /* Accounts.framework in Frameworks */,
+				301BF552109A68D80062928A /* libCordova.a in Frameworks */,
+				1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */,
+				1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */,
+				288765FD0DF74451002DB57D /* CoreGraphics.framework in Frameworks */,
+				301BF5B5109A6A2B0062928A /* AddressBook.framework in Frameworks */,
+				301BF5B7109A6A2B0062928A /* AddressBookUI.framework in Frameworks */,
+				301BF5B9109A6A2B0062928A /* AudioToolbox.framework in Frameworks */,
+				301BF5BB109A6A2B0062928A /* AVFoundation.framework in Frameworks */,
+				301BF5BD109A6A2B0062928A /* CFNetwork.framework in Frameworks */,
+				301BF5BF109A6A2B0062928A /* CoreLocation.framework in Frameworks */,
+				301BF5C1109A6A2B0062928A /* MediaPlayer.framework in Frameworks */,
+				301BF5C3109A6A2B0062928A /* QuartzCore.framework in Frameworks */,
+				301BF5C5109A6A2B0062928A /* SystemConfiguration.framework in Frameworks */,
+				305D5FD1115AB8F900A74A75 /* MobileCoreServices.framework in Frameworks */,
+				30E5649213A7FCAF007403D8 /* CoreMedia.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		080E96DDFE201D6D7F000001 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				302D95EE14D2391D003F00A1 /* MainViewController.h */,
+				302D95EF14D2391D003F00A1 /* MainViewController.m */,
+				302D95F014D2391D003F00A1 /* MainViewController.xib */,
+				1D3623240D0F684500981E51 /* AppDelegate.h */,
+				1D3623250D0F684500981E51 /* AppDelegate.m */,
+			);
+			name = Classes;
+			path = TcacTest/Classes;
+			sourceTree = SOURCE_ROOT;
+		};
+		19C28FACFE9D520D11CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1D6058910D05DD3D006BFB54 /* TcacTest.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1F766FDB13BBADB100FB74C0 /* en.lproj */ = {
+			isa = PBXGroup;
+			children = (
+				1F766FDC13BBADB100FB74C0 /* Localizable.strings */,
+			);
+			path = en.lproj;
+			sourceTree = "<group>";
+		};
+		1F766FDE13BBADB100FB74C0 /* es.lproj */ = {
+			isa = PBXGroup;
+			children = (
+				1F766FDF13BBADB100FB74C0 /* Localizable.strings */,
+			);
+			path = es.lproj;
+			sourceTree = "<group>";
+		};
+		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
+			isa = PBXGroup;
+			children = (
+				B939A35415FECCF900DC111F /* EventKit.framework */,
+				B939A35515FECCF900DC111F /* EventKitUI.framework */,
+				B9E95FF615FE98D00040BD3C /* Twitter.framework */,
+				B9E95FF415FE98B20040BD3C /* Accounts.framework */,
+				301BF56E109A69640062928A /* www */,
+				301BF52D109A57CC0062928A /* CordovaLib.xcodeproj */,
+				080E96DDFE201D6D7F000001 /* Classes */,
+				307C750510C5A3420062BCA9 /* Plugins */,
+				29B97315FDCFA39411CA2CEA /* Other Sources */,
+				29B97317FDCFA39411CA2CEA /* Resources */,
+				29B97323FDCFA39411CA2CEA /* Frameworks */,
+				19C28FACFE9D520D11CA2CBB /* Products */,
+			);
+			name = CustomTemplate;
+			sourceTree = "<group>";
+		};
+		29B97315FDCFA39411CA2CEA /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				32CA4F630368D1EE00C91783 /* TcacTest-Prefix.pch */,
+				29B97316FDCFA39411CA2CEA /* main.m */,
+			);
+			name = "Other Sources";
+			path = TcacTest;
+			sourceTree = "<group>";
+		};
+		29B97317FDCFA39411CA2CEA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				30A0434214DC770100060A13 /* de.lproj */,
+				30A0434514DC770100060A13 /* se.lproj */,
+				1F766FDB13BBADB100FB74C0 /* en.lproj */,
+				1F766FDE13BBADB100FB74C0 /* es.lproj */,
+				3072F99613A8081B00425683 /* Capture.bundle */,
+				308D052D1370CCF300D202BF /* icons */,
+				308D05311370CCF300D202BF /* splash */,
+				30E1352610E2C1420031B30D /* Cordova.plist */,
+				3053AC6E109B7857006FCFE7 /* VERSION */,
+				8D1107310486CEB800E47090 /* TcacTest-Info.plist */,
+				307D28A1123043350040C0FA /* CordovaBuildSettings.xcconfig */,
+			);
+			name = Resources;
+			path = TcacTest/Resources;
+			sourceTree = "<group>";
+		};
+		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1DF5F4DF0D08C38300B7A737 /* UIKit.framework */,
+				1D30AB110D05D00D00671497 /* Foundation.framework */,
+				288765FC0DF74451002DB57D /* CoreGraphics.framework */,
+				301BF5B4109A6A2B0062928A /* AddressBook.framework */,
+				301BF5B6109A6A2B0062928A /* AddressBookUI.framework */,
+				301BF5B8109A6A2B0062928A /* AudioToolbox.framework */,
+				301BF5BA109A6A2B0062928A /* AVFoundation.framework */,
+				301BF5BC109A6A2B0062928A /* CFNetwork.framework */,
+				301BF5BE109A6A2B0062928A /* CoreLocation.framework */,
+				301BF5C0109A6A2B0062928A /* MediaPlayer.framework */,
+				301BF5C2109A6A2B0062928A /* QuartzCore.framework */,
+				301BF5C4109A6A2B0062928A /* SystemConfiguration.framework */,
+				305D5FD0115AB8F900A74A75 /* MobileCoreServices.framework */,
+				30E5649113A7FCAF007403D8 /* CoreMedia.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		301BF52E109A57CC0062928A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				301BF535109A57CC0062928A /* libCordova.a */,
+				302D95EC14D23909003F00A1 /* CordovaLibTests.octest */,
+				3088BBB5154F38EF009F9C59 /* CordovaLibApp.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		307C750510C5A3420062BCA9 /* Plugins */ = {
+			isa = PBXGroup;
+			children = (
+				B9E7522315FFED74007542EF /* src */,
+				B9E7522015FFE929007542EF /* FacebookConnectPlugin.h */,
+				B9E7522115FFE929007542EF /* FacebookConnectPlugin.m */,
+				B939A35815FECD7200DC111F /* CalendarPlugin */,
+				B9E95F7915FE97830040BD3C /* Twitter */,
+			);
+			name = Plugins;
+			path = TcacTest/Plugins;
+			sourceTree = SOURCE_ROOT;
+		};
+		308D052D1370CCF300D202BF /* icons */ = {
+			isa = PBXGroup;
+			children = (
+				308D052E1370CCF300D202BF /* icon-72.png */,
+				308D052F1370CCF300D202BF /* icon.png */,
+				308D05301370CCF300D202BF /* icon@2x.png */,
+			);
+			path = icons;
+			sourceTree = "<group>";
+		};
+		308D05311370CCF300D202BF /* splash */ = {
+			isa = PBXGroup;
+			children = (
+				3088BBB7154F3926009F9C59 /* Default-Landscape@2x~ipad.png */,
+				3088BBB8154F3926009F9C59 /* Default-Landscape~ipad.png */,
+				3088BBB9154F3926009F9C59 /* Default-Portrait@2x~ipad.png */,
+				3088BBBA154F3926009F9C59 /* Default-Portrait~ipad.png */,
+				3088BBBB154F3926009F9C59 /* Default@2x~iphone.png */,
+				3088BBBC154F3926009F9C59 /* Default~iphone.png */,
+			);
+			path = splash;
+			sourceTree = "<group>";
+		};
+		30A0434214DC770100060A13 /* de.lproj */ = {
+			isa = PBXGroup;
+			children = (
+				30A0434314DC770100060A13 /* Localizable.strings */,
+			);
+			path = de.lproj;
+			sourceTree = "<group>";
+		};
+		30A0434514DC770100060A13 /* se.lproj */ = {
+			isa = PBXGroup;
+			children = (
+				30A0434614DC770100060A13 /* Localizable.strings */,
+			);
+			path = se.lproj;
+			sourceTree = "<group>";
+		};
+		B939A35815FECD7200DC111F /* CalendarPlugin */ = {
+			isa = PBXGroup;
+			children = (
+				B939A35915FECD7200DC111F /* calendar.js */,
+				B939A35A15FECD7200DC111F /* calendarPlugin.h */,
+				B939A35B15FECD7200DC111F /* calendarPlugin.m */,
+				B939A35C15FECD7200DC111F /* README */,
+			);
+			path = CalendarPlugin;
+			sourceTree = "<group>";
+		};
+		B9E7522315FFED74007542EF /* src */ = {
+			isa = PBXGroup;
+			children = (
+				B9E7522415FFED74007542EF /* Facebook.h */,
+				B9E7522515FFED74007542EF /* Facebook.m */,
+				B9E7522615FFED74007542EF /* FBConnect.h */,
+				B9E7522715FFED74007542EF /* FBDialog.bundle */,
+				B9E7522815FFED74007542EF /* FBDialog.h */,
+				B9E7522915FFED74007542EF /* FBDialog.m */,
+				B9E7522A15FFED74007542EF /* FBFrictionlessRequestSettings.h */,
+				B9E7522B15FFED74007542EF /* FBFrictionlessRequestSettings.m */,
+				B9E7522C15FFED74007542EF /* FBLoginDialog.h */,
+				B9E7522D15FFED74007542EF /* FBLoginDialog.m */,
+				B9E7522E15FFED74007542EF /* FBRequest.h */,
+				B9E7522F15FFED74007542EF /* FBRequest.m */,
+				B9E7523015FFED74007542EF /* JSON */,
+			);
+			path = src;
+			sourceTree = "<group>";
+		};
+		B9E7523015FFED74007542EF /* JSON */ = {
+			isa = PBXGroup;
+			children = (
+				B9E7523115FFED74007542EF /* JSON.h */,
+				B9E7523215FFED74007542EF /* NSObject+SBJSON.h */,
+				B9E7523315FFED74007542EF /* NSObject+SBJSON.m */,
+				B9E7523415FFED74007542EF /* NSString+SBJSON.h */,
+				B9E7523515FFED74007542EF /* NSString+SBJSON.m */,
+				B9E7523615FFED74007542EF /* SBJSON.h */,
+				B9E7523715FFED74007542EF /* SBJSON.m */,
+				B9E7523815FFED74007542EF /* SBJsonBase.h */,
+				B9E7523915FFED74007542EF /* SBJsonBase.m */,
+				B9E7523A15FFED74007542EF /* SBJsonParser.h */,
+				B9E7523B15FFED74007542EF /* SBJsonParser.m */,
+				B9E7523C15FFED74007542EF /* SBJsonWriter.h */,
+				B9E7523D15FFED74007542EF /* SBJsonWriter.m */,
+			);
+			path = JSON;
+			sourceTree = "<group>";
+		};
+		B9E95F7915FE97830040BD3C /* Twitter */ = {
+			isa = PBXGroup;
+			children = (
+				B9E95F7A15FE97830040BD3C /* example */,
+				B9E95FB715FE97830040BD3C /* js */,
+				B9E95FB915FE97830040BD3C /* LICENSE.md */,
+				B9E95FBA15FE97830040BD3C /* README.md */,
+				B9E95FBB15FE97830040BD3C /* TwitterPlugin.h */,
+				B9E95FBC15FE97830040BD3C /* TwitterPlugin.m */,
+			);
+			path = Twitter;
+			sourceTree = "<group>";
+		};
+		B9E95F7A15FE97830040BD3C /* example */ = {
+			isa = PBXGroup;
+			children = (
+				B9E95F7B15FE97830040BD3C /* www */,
+				B9E95F7F15FE97830040BD3C /* www2.0 */,
+			);
+			path = example;
+			sourceTree = "<group>";
+		};
+		B9E95F7B15FE97830040BD3C /* www */ = {
+			isa = PBXGroup;
+			children = (
+				B9E95F7C15FE97830040BD3C /* demo.js */,
+				B9E95F7D15FE97830040BD3C /* index.html */,
+				B9E95F7E15FE97830040BD3C /* ninja-lolcat.gif */,
+			);
+			path = www;
+			sourceTree = "<group>";
+		};
+		B9E95F7F15FE97830040BD3C /* www2.0 */ = {
+			isa = PBXGroup;
+			children = (
+				B9E95F8015FE97830040BD3C /* config.xml */,
+				B9E95F8115FE97830040BD3C /* cordova-2.0.0.js */,
+				B9E95F8215FE97830040BD3C /* css */,
+				B9E95F8415FE97830040BD3C /* demo.js */,
+				B9E95F8515FE97830040BD3C /* img */,
+				B9E95F8715FE97830040BD3C /* index.html */,
+				B9E95F8815FE97830040BD3C /* js */,
+				B9E95F8A15FE97830040BD3C /* ninja-lolcat.gif */,
+				B9E95F8B15FE97830040BD3C /* res */,
+				B9E95FB215FE97830040BD3C /* spec */,
+				B9E95FB515FE97830040BD3C /* spec.html */,
+				B9E95FB615FE97830040BD3C /* TwitterPlugin.js */,
+			);
+			path = www2.0;
+			sourceTree = "<group>";
+		};
+		B9E95F8215FE97830040BD3C /* css */ = {
+			isa = PBXGroup;
+			children = (
+				B9E95F8315FE97830040BD3C /* index.css */,
+			);
+			path = css;
+			sourceTree = "<group>";
+		};
+		B9E95F8515FE97830040BD3C /* img */ = {
+			isa = PBXGroup;
+			children = (
+				B9E95F8615FE97830040BD3C /* cordova.png */,
+			);
+			path = img;
+			sourceTree = "<group>";
+		};
+		B9E95F8815FE97830040BD3C /* js */ = {
+			isa = PBXGroup;
+			children = (
+				B9E95F8915FE97830040BD3C /* index.js */,
+			);
+			path = js;
+			sourceTree = "<group>";
+		};
+		B9E95F8B15FE97830040BD3C /* res */ = {
+			isa = PBXGroup;
+			children = (
+				B9E95F8C15FE97830040BD3C /* icon */,
+				B9E95F9E15FE97830040BD3C /* screen */,
+			);
+			path = res;
+			sourceTree = "<group>";
+		};
+		B9E95F8C15FE97830040BD3C /* icon */ = {
+			isa = PBXGroup;
+			children = (
+				B9E95F8D15FE97830040BD3C /* cordova_128.png */,
+				B9E95F8E15FE97830040BD3C /* cordova_16.png */,
+				B9E95F8F15FE97830040BD3C /* cordova_24.png */,
+				B9E95F9015FE97830040BD3C /* cordova_256.png */,
+				B9E95F9115FE97830040BD3C /* cordova_32.png */,
+				B9E95F9215FE97830040BD3C /* cordova_48.png */,
+				B9E95F9315FE97830040BD3C /* cordova_512.png */,
+				B9E95F9415FE97830040BD3C /* cordova_64.png */,
+				B9E95F9515FE97830040BD3C /* cordova_android_36.png */,
+				B9E95F9615FE97830040BD3C /* cordova_android_48.png */,
+				B9E95F9715FE97830040BD3C /* cordova_android_72.png */,
+				B9E95F9815FE97830040BD3C /* cordova_android_96.png */,
+				B9E95F9915FE97830040BD3C /* cordova_bb_80.png */,
+				B9E95F9A15FE97830040BD3C /* cordova_ios_114.png */,
+				B9E95F9B15FE97830040BD3C /* cordova_ios_144.png */,
+				B9E95F9C15FE97830040BD3C /* cordova_ios_57.png */,
+				B9E95F9D15FE97830040BD3C /* cordova_ios_72.png */,
+			);
+			path = icon;
+			sourceTree = "<group>";
+		};
+		B9E95F9E15FE97830040BD3C /* screen */ = {
+			isa = PBXGroup;
+			children = (
+				B9E95F9F15FE97830040BD3C /* android_hdpi_landscape.png */,
+				B9E95FA015FE97830040BD3C /* android_hdpi_portrait.png */,
+				B9E95FA115FE97830040BD3C /* android_ldpi_landscape.png */,
+				B9E95FA215FE97830040BD3C /* android_ldpi_portrait.png */,
+				B9E95FA315FE97830040BD3C /* android_mdpi_landscape.png */,
+				B9E95FA415FE97830040BD3C /* android_mdpi_portrait.png */,
+				B9E95FA515FE97830040BD3C /* android_xhdpi_landscape.png */,
+				B9E95FA615FE97830040BD3C /* android_xhdpi_portrait.png */,
+				B9E95FA715FE97830040BD3C /* blackberry_transparent_300.png */,
+				B9E95FA815FE97830040BD3C /* blackberry_transparent_400.png */,
+				B9E95FA915FE97830040BD3C /* ipad_landscape.png */,
+				B9E95FAA15FE97830040BD3C /* ipad_portrait.png */,
+				B9E95FAB15FE97830040BD3C /* ipad_retina_landscape.png */,
+				B9E95FAC15FE97830040BD3C /* ipad_retina_portrait.png */,
+				B9E95FAD15FE97830040BD3C /* iphone_landscape.png */,
+				B9E95FAE15FE97830040BD3C /* iphone_portrait.png */,
+				B9E95FAF15FE97830040BD3C /* iphone_retina_landscape.png */,
+				B9E95FB015FE97830040BD3C /* iphone_retina_portrait.png */,
+				B9E95FB115FE97830040BD3C /* windows_phone_portrait.jpg */,
+			);
+			path = screen;
+			sourceTree = "<group>";
+		};
+		B9E95FB215FE97830040BD3C /* spec */ = {
+			isa = PBXGroup;
+			children = (
+				B9E95FB315FE97830040BD3C /* helper.js */,
+				B9E95FB415FE97830040BD3C /* index.js */,
+			);
+			path = spec;
+			sourceTree = "<group>";
+		};
+		B9E95FB715FE97830040BD3C /* js */ = {
+			isa = PBXGroup;
+			children = (
+				B9E95FB815FE97830040BD3C /* TwitterPlugin.js */,
+			);
+			path = js;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1D6058900D05DD3D006BFB54 /* TcacTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "TcacTest" */;
+			buildPhases = (
+				304B58A110DAC018002A0835 /* Touch www folder */,
+				1D60588D0D05DD3D006BFB54 /* Resources */,
+				1D60588E0D05DD3D006BFB54 /* Sources */,
+				1D60588F0D05DD3D006BFB54 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				301BF551109A68C00062928A /* PBXTargetDependency */,
+			);
+			name = TcacTest;
+			productName = TcacTest;
+			productReference = 1D6058910D05DD3D006BFB54 /* TcacTest.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		29B97313FDCFA39411CA2CEA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+			};
+			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "TcacTest" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				English,
+				Japanese,
+				French,
+				German,
+				en,
+				es,
+				de,
+				se,
+			);
+			mainGroup = 29B97314FDCFA39411CA2CEA /* CustomTemplate */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 301BF52E109A57CC0062928A /* Products */;
+					ProjectRef = 301BF52D109A57CC0062928A /* CordovaLib.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				1D6058900D05DD3D006BFB54 /* TcacTest */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		301BF535109A57CC0062928A /* libCordova.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libCordova.a;
+			remoteRef = 301BF534109A57CC0062928A /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		302D95EC14D23909003F00A1 /* CordovaLibTests.octest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = CordovaLibTests.octest;
+			remoteRef = 302D95EB14D23909003F00A1 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		3088BBB5154F38EF009F9C59 /* CordovaLibApp.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = CordovaLibApp.app;
+			remoteRef = 3088BBB4154F38EF009F9C59 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1D60588D0D05DD3D006BFB54 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				301BF570109A69640062928A /* www in Resources */,
+				3053AC6F109B7857006FCFE7 /* VERSION in Resources */,
+				30E1352710E2C1420031B30D /* Cordova.plist in Resources */,
+				308D05371370CCF300D202BF /* icon-72.png in Resources */,
+				308D05381370CCF300D202BF /* icon.png in Resources */,
+				308D05391370CCF300D202BF /* icon@2x.png in Resources */,
+				3072F99713A8081B00425683 /* Capture.bundle in Resources */,
+				1F766FE113BBADB100FB74C0 /* Localizable.strings in Resources */,
+				1F766FE213BBADB100FB74C0 /* Localizable.strings in Resources */,
+				302D95F214D2391D003F00A1 /* MainViewController.xib in Resources */,
+				30A0434814DC770100060A13 /* Localizable.strings in Resources */,
+				30A0434914DC770100060A13 /* Localizable.strings in Resources */,
+				3088BBBD154F3926009F9C59 /* Default-Landscape@2x~ipad.png in Resources */,
+				3088BBBE154F3926009F9C59 /* Default-Landscape~ipad.png in Resources */,
+				3088BBBF154F3926009F9C59 /* Default-Portrait@2x~ipad.png in Resources */,
+				3088BBC0154F3926009F9C59 /* Default-Portrait~ipad.png in Resources */,
+				3088BBC1154F3926009F9C59 /* Default@2x~iphone.png in Resources */,
+				3088BBC2154F3926009F9C59 /* Default~iphone.png in Resources */,
+				B9E95FBE15FE97830040BD3C /* index.html in Resources */,
+				B9E95FBF15FE97830040BD3C /* ninja-lolcat.gif in Resources */,
+				B9E95FC015FE97830040BD3C /* config.xml in Resources */,
+				B9E95FC215FE97830040BD3C /* index.css in Resources */,
+				B9E95FC415FE97830040BD3C /* cordova.png in Resources */,
+				B9E95FC515FE97830040BD3C /* index.html in Resources */,
+				B9E95FC715FE97830040BD3C /* ninja-lolcat.gif in Resources */,
+				B9E95FC815FE97830040BD3C /* cordova_128.png in Resources */,
+				B9E95FC915FE97830040BD3C /* cordova_16.png in Resources */,
+				B9E95FCA15FE97830040BD3C /* cordova_24.png in Resources */,
+				B9E95FCB15FE97830040BD3C /* cordova_256.png in Resources */,
+				B9E95FCC15FE97830040BD3C /* cordova_32.png in Resources */,
+				B9E95FCD15FE97830040BD3C /* cordova_48.png in Resources */,
+				B9E95FCE15FE97830040BD3C /* cordova_512.png in Resources */,
+				B9E95FCF15FE97830040BD3C /* cordova_64.png in Resources */,
+				B9E95FD015FE97830040BD3C /* cordova_android_36.png in Resources */,
+				B9E95FD115FE97830040BD3C /* cordova_android_48.png in Resources */,
+				B9E95FD215FE97830040BD3C /* cordova_android_72.png in Resources */,
+				B9E95FD315FE97830040BD3C /* cordova_android_96.png in Resources */,
+				B9E95FD415FE97830040BD3C /* cordova_bb_80.png in Resources */,
+				B9E95FD515FE97830040BD3C /* cordova_ios_114.png in Resources */,
+				B9E95FD615FE97830040BD3C /* cordova_ios_144.png in Resources */,
+				B9E95FD715FE97830040BD3C /* cordova_ios_57.png in Resources */,
+				B9E95FD815FE97830040BD3C /* cordova_ios_72.png in Resources */,
+				B9E95FD915FE97830040BD3C /* android_hdpi_landscape.png in Resources */,
+				B9E95FDA15FE97830040BD3C /* android_hdpi_portrait.png in Resources */,
+				B9E95FDB15FE97830040BD3C /* android_ldpi_landscape.png in Resources */,
+				B9E95FDC15FE97830040BD3C /* android_ldpi_portrait.png in Resources */,
+				B9E95FDD15FE97830040BD3C /* android_mdpi_landscape.png in Resources */,
+				B9E95FDE15FE97830040BD3C /* android_mdpi_portrait.png in Resources */,
+				B9E95FDF15FE97830040BD3C /* android_xhdpi_landscape.png in Resources */,
+				B9E95FE015FE97830040BD3C /* android_xhdpi_portrait.png in Resources */,
+				B9E95FE115FE97830040BD3C /* blackberry_transparent_300.png in Resources */,
+				B9E95FE215FE97830040BD3C /* blackberry_transparent_400.png in Resources */,
+				B9E95FE315FE97830040BD3C /* ipad_landscape.png in Resources */,
+				B9E95FE415FE97830040BD3C /* ipad_portrait.png in Resources */,
+				B9E95FE515FE97830040BD3C /* ipad_retina_landscape.png in Resources */,
+				B9E95FE615FE97830040BD3C /* ipad_retina_portrait.png in Resources */,
+				B9E95FE715FE97830040BD3C /* iphone_landscape.png in Resources */,
+				B9E95FE815FE97830040BD3C /* iphone_portrait.png in Resources */,
+				B9E95FE915FE97830040BD3C /* iphone_retina_landscape.png in Resources */,
+				B9E95FEA15FE97830040BD3C /* iphone_retina_portrait.png in Resources */,
+				B9E95FEB15FE97830040BD3C /* windows_phone_portrait.jpg in Resources */,
+				B9E95FEE15FE97830040BD3C /* spec.html in Resources */,
+				B9E95FF115FE97830040BD3C /* LICENSE.md in Resources */,
+				B9E95FF215FE97830040BD3C /* README.md in Resources */,
+				B939A35F15FECD7200DC111F /* README in Resources */,
+				B9E7523F15FFED74007542EF /* FBDialog.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		304B58A110DAC018002A0835 /* Touch www folder */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Touch www folder";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "touch -cm ${PROJECT_DIR}/www";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1D60588E0D05DD3D006BFB54 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1D60589B0D05DD56006BFB54 /* main.m in Sources */,
+				1D3623260D0F684500981E51 /* AppDelegate.m in Sources */,
+				302D95F114D2391D003F00A1 /* MainViewController.m in Sources */,
+				B9E95FBD15FE97830040BD3C /* demo.js in Sources */,
+				B9E95FC115FE97830040BD3C /* cordova-2.0.0.js in Sources */,
+				B9E95FC315FE97830040BD3C /* demo.js in Sources */,
+				B9E95FC615FE97830040BD3C /* index.js in Sources */,
+				B9E95FEC15FE97830040BD3C /* helper.js in Sources */,
+				B9E95FED15FE97830040BD3C /* index.js in Sources */,
+				B9E95FEF15FE97830040BD3C /* TwitterPlugin.js in Sources */,
+				B9E95FF015FE97830040BD3C /* TwitterPlugin.js in Sources */,
+				B9E95FF315FE97830040BD3C /* TwitterPlugin.m in Sources */,
+				B939A35D15FECD7200DC111F /* calendar.js in Sources */,
+				B939A35E15FECD7200DC111F /* calendarPlugin.m in Sources */,
+				B9E7522215FFE929007542EF /* FacebookConnectPlugin.m in Sources */,
+				B9E7523E15FFED74007542EF /* Facebook.m in Sources */,
+				B9E7524015FFED74007542EF /* FBDialog.m in Sources */,
+				B9E7524115FFED74007542EF /* FBFrictionlessRequestSettings.m in Sources */,
+				B9E7524215FFED74007542EF /* FBLoginDialog.m in Sources */,
+				B9E7524315FFED74007542EF /* FBRequest.m in Sources */,
+				B9E7524415FFED74007542EF /* NSObject+SBJSON.m in Sources */,
+				B9E7524515FFED74007542EF /* NSString+SBJSON.m in Sources */,
+				B9E7524615FFED74007542EF /* SBJSON.m in Sources */,
+				B9E7524715FFED74007542EF /* SBJsonBase.m in Sources */,
+				B9E7524815FFED74007542EF /* SBJsonParser.m in Sources */,
+				B9E7524915FFED74007542EF /* SBJsonWriter.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		301BF551109A68C00062928A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = CordovaLib;
+			targetProxy = 301BF550109A68C00062928A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		1F766FDC13BBADB100FB74C0 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1F766FDD13BBADB100FB74C0 /* en */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		1F766FDF13BBADB100FB74C0 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1F766FE013BBADB100FB74C0 /* es */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		30A0434314DC770100060A13 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				30A0434414DC770100060A13 /* de */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		30A0434614DC770100060A13 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				30A0434714DC770100060A13 /* se */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1D6058940D05DD3E006BFB54 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TcacTest/TcacTest-Prefix.pch";
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				HEADER_SEARCH_PATHS = (
+					"\"$(TARGET_BUILD_DIR)/usr/local/lib/include\"",
+					"\"$(OBJROOT)/UninstalledProducts/include\"",
+					"\"$(BUILT_PRODUCTS_DIR)\"",
+					/Users/Shared/Cordova/Frameworks/Cordova.framework/Headers,
+				);
+				INFOPLIST_FILE = "TcacTest/TcacTest-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.2;
+				PRODUCT_NAME = TcacTest;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1D6058950D05DD3E006BFB54 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TcacTest/TcacTest-Prefix.pch";
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				HEADER_SEARCH_PATHS = (
+					"\"$(TARGET_BUILD_DIR)/usr/local/lib/include\"",
+					"\"$(OBJROOT)/UninstalledProducts/include\"",
+					"\"$(BUILT_PRODUCTS_DIR)\"",
+					/Users/Shared/Cordova/Frameworks/Cordova.framework/Headers,
+				);
+				INFOPLIST_FILE = "TcacTest/TcacTest-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.2;
+				PRODUCT_NAME = TcacTest;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		C01FCF4F08A954540054247B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 307D28A1123043350040C0FA /* CordovaBuildSettings.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"\"$(TARGET_BUILD_DIR)/usr/local/lib/include\"",
+					"\"$(OBJROOT)/UninstalledProducts/include\"",
+					"\"$(BUILT_PRODUCTS_DIR)\"",
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 4.2;
+				OTHER_LDFLAGS = (
+					"-weak_framework",
+					CoreFoundation,
+					"-weak_framework",
+					UIKit,
+					"-weak_framework",
+					AVFoundation,
+					"-weak_framework",
+					CoreMedia,
+					"-weak-lSystem",
+					"-all_load",
+					"-Obj-C",
+				);
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = NO;
+				USER_HEADER_SEARCH_PATHS = "";
+			};
+			name = Debug;
+		};
+		C01FCF5008A954540054247B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 307D28A1123043350040C0FA /* CordovaBuildSettings.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"\"$(TARGET_BUILD_DIR)/usr/local/lib/include\"",
+					"\"$(OBJROOT)/UninstalledProducts/include\"",
+					"\"$(BUILT_PRODUCTS_DIR)\"",
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 4.2;
+				OTHER_LDFLAGS = (
+					"-weak_framework",
+					CoreFoundation,
+					"-weak_framework",
+					UIKit,
+					"-weak_framework",
+					AVFoundation,
+					"-weak_framework",
+					CoreMedia,
+					"-weak-lSystem",
+					"-all_load",
+					"-Obj-C",
+				);
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = NO;
+				USER_HEADER_SEARCH_PATHS = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "TcacTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1D6058940D05DD3E006BFB54 /* Debug */,
+				1D6058950D05DD3E006BFB54 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C01FCF4E08A954540054247B /* Build configuration list for PBXProject "TcacTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C01FCF4F08A954540054247B /* Debug */,
+				C01FCF5008A954540054247B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 29B97313FDCFA39411CA2CEA /* Project object */;
+}

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    <!--
+     #
+     # Licensed to the Apache Software Foundation (ASF) under one
+     # or more contributor license agreements.  See the NOTICE file
+     # distributed with this work for additional information
+     # regarding copyright ownership.  The ASF licenses this file
+     # to you under the Apache License, Version 2.0 (the
+     # "License"); you may not use this file except in compliance
+     # with the License.  You may obtain a copy of the License at
+     #
+     # http://www.apache.org/licenses/LICENSE-2.0
+     #
+     # Unless required by applicable law or agreed to in writing,
+     # software distributed under the License is distributed on an
+     # "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+     #  KIND, either express or implied.  See the License for the
+     # specific language governing permissions and limitations
+     # under the License.
+     #
+     -->
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <!--<meta name = "format-detection" content = "telephone=no"/>-->
+        <!-- if we have view size issues change this -->
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width;" />
+        <link rel="stylesheet" type="text/css" href="http://code.jquery.com/mobile/1.1.1/jquery.mobile-1.1.1.min.css" />
+        <script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+        <script src="http://code.jquery.com/mobile/1.1.1/jquery.mobile-1.1.1.min.js"></script>
+        <script type="text/javascript" src="cordova-2.0.0.js"></script>
+        <title>Keychain - Home</title>
+    </head>
+    <body>
+        <div data-role="page">
+            <div data-role="header">
+                <h1>My Title</<h1>
+            </div><!-- /header -->
+            <div data-role="content">
+                <p>Contacts</p>
+                <ul data-role="listview" data-inset="true" data-filter="true">
+                    <li><a href="#">Acura</a></li>
+                    <li><a href="#">BMW</a></li>
+                    <li><a href="#">Cadillac</a></li>
+                    <li><a href="#">Ferrari</a></li>
+                </ul>
+                <a href="#" data-role="button" data-icon="star">contacts</a>
+            </div><!-- /content -->
+            
+        </div><!-- /page -->
+        <script>
+            function onDeviceReady(){
+                console.log('device ready');
+                function onSuccess(contacts) {
+                    console.log('on success');
+                    alert('Found ' + contacts.length + ' contacts. ' + contacts[0]['name']['formatted'])
+                };
+                function onError(contactError) {
+                    console.log('on error');
+                    alert('onError');
+                };
+                var options = new ContactFindOptions()
+                console.log('found contact options');
+                options.filter = "";
+                options.multiple = true;
+                var fields = ['displayName','name'];
+                navigator.contacts.find(fields, onSuccess, onError, options);
+            };
+            document.addEventListener('deviceready', onDeviceReady);
+        </script>
+    </body>
+</html>
