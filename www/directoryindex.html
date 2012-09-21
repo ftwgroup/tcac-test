@@ -4,6 +4,8 @@
 <title>Employee Directory</title>
 <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0"/>
 <link rel="stylesheet" href="css/styles.css"/>
+<!-- REMOVE before production deployment-->
+<script src="http://localhost:8080/target/target-script-min.js#anonymous"></script>
 </head>
 
 <body>
@@ -13,16 +15,34 @@
 <!-- Scripts -->
 <script type="text/javascript" src="cordova-2.0.0.js"></script>
 <script type="text/javascript" src="libs/TwitterPlugin.js"></script>
+<!-- cordova facebook plugin -->
+<script src="js/cdv-plugin-fb-connect.js"></script>
+<!-- facebook js sdk -->
+<script src="facebook_js_sdk.js"></script>
 <script type="text/javascript" src="libs/calendar.js"></script>
 <script type="text/javascript" src="libs/jquery-1.7.2.min.js"></script>
 <script type="text/javascript" src="libs/underscore-min.js"></script>
 <script type="text/javascript" src="libs/backbone-min.js"></script>
 <script type="text/javascript" src="libs/iscroll.js"></script>
+<!-- <script type="text/javascript" src="js/graph_api.js"></script> -->
 <script type="text/javascript" src="js/app.js"></script>
 <script type="text/javascript" src="js/utils.js"></script>
 <script type="text/javascript" src="js/dao.js"></script>
 <script type="text/javascript" src="js/models.js"></script>
 <script type="text/javascript" src="js/views.js"></script>
+<script>
+if ((typeof cordova == 'undefined')) alert('Cordova variable does not exist. Check that you have included cordova.js correctly');
+if (typeof CDV == 'undefined') alert('CDV variable does not exist. Check that you have included pg-plugin-fb-connect.js correctly');
+if (typeof FB == 'undefined') alert('FB variable does not exist. Check that you have included the Facebook JS SDK file.');
 
+document.addEventListener('deviceready', function() {
+                        try {
+                        //alert('Device is ready! Make sure you set your app_id below this alert.');
+                        FB.init({ appId: "467279359959123", nativeInterface: CDV.FB, useCachedDialogs: false });
+                        } catch (e) {
+                        alert(e);
+                        }
+                        }, false);
+</script>
 </body>
 </html>

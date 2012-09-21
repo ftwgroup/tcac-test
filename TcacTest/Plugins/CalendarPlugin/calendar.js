@@ -23,6 +23,7 @@ calendarPlugin.prototype.getCalendarList = function(response, err) {
     cordova.exec(response, err, "calendarPlugin", "getCalendarList",[]);
 };
 
+
 // More methods will need to be added like fetch events, delete event, edit event
 
 calendarPlugin.install = function()

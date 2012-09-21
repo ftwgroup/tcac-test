@@ -38,7 +38,7 @@
 - (void)getFullCalendarList:(NSMutableArray *) arguments withDict:(NSMutableDictionary*)options;
 //- (void)modifyEvent:(NSMutableArray*)arguments withDict:(NSMutableDictionary*)options;
 
-//- (void)findEvent:(NSMutableArray*)arguments withDict:(NSMutableDictionary*)options;
+- (void)findEvent:(NSMutableArray*)arguments withDict:(NSMutableDictionary*)options;
 
 //- (void)deleteEvent:(NSMutableArray*)arguments withDict:(NSMutableDictionary*)options;
 

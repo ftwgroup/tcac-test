@@ -163,7 +163,7 @@ $(document).ready ->
 	directory.db = window.openDatabase "EmployeeDB", '1.0', 'Employee Demo DB', 200000
 	employeeDAO = new directory.dao.EmployeeDAO directory.db
 	employeeDAO.initialize ->
-		directory.utils.templateLoader.load ['search-page', 'group-page', 'contact-page', 'contact-list-item', 'sync-page', 'feed-page', 'tweet-template', 'home-page', 'calendar-list', 'calendar-page'], ->
+		directory.utils.templateLoader.load ['search-page', 'group-page', 'contact-page', 'contact-list-item', 'sync-page', 'feed-page', 'tweet-template', 'home-page', 'calendar-list', 'calendar-page', 'facebook-template', 'event-template'], ->
 			directory.app = new directory.Router()
 			Backbone.history.start()
 

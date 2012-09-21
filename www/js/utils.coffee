@@ -12,8 +12,9 @@ directory.utils.templateLoader =
 
 	get: (name) ->
 		template = @templates[name]
-		#unless template
-		#	showAlert('Template not loaded', 'Error')
+		console.log @templates
+		unless template
+			showAlert('Template not loaded', 'Error')
 		template
 
 # TODO replace with the coffeescript export command or whatever you do to export a var

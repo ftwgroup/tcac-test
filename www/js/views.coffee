@@ -60,12 +60,15 @@ directory.views.GroupPage = class GroupPage extends Backbone.View
 
 directory.views.CalendarPage = class CalendarPage extends Backbone.View
 	events:
-		"click .test":  "create"
+		"click .test":  		"showEvents",
+		"click .create":		"create"
 
 	initialize: ->
 		_.bindAll @
 		@template = _.template directory.utils.templateLoader.get 'calendar-page'
 		@calendarListTemplate = _.template directory.utils.templateLoader.get 'calendar-list'
+		@eventTemplate = _.template directory.utils.templateLoader.get 'event-template'
+
 
 	render: ->
 		console.log 'calendar page'
@@ -80,10 +83,26 @@ directory.views.CalendarPage = class CalendarPage extends Backbone.View
 		)
 		@
 
-	create: ->
-		console.log "create"
+	create: (e)->
+		console.log "create", e.target
+		data = $(e.target).data()
+		console.log "data", data
 		window.plugins.calendarPlugin.createEvent (res)->
 			alert res
+
+	showEvents: (e)->
+		console.log "show events"
+		window.plugins.calendarPlugin.getEventList (res)=>
+			console.log "result", res
+			$('ul').empty()
+			$('.calendars').hide()
+			$('ul').append @eventTemplate res[0]
+		, (res)->
+			console.log "error result", res
+			$('ul').empty()
+			$('.calendars').hide()
+			$('ul').append '<li class="create">Create and Event</li>'
+		e.preventDefault()
 
 directory.views.ContactListView = class ContactListView extends Backbone.View
 
@@ -161,7 +180,8 @@ directory.views.ContactPage = class ContactPage extends Backbone.View
 directory.views.FeedsPage = class FeedsPage extends Backbone.View
 
 	events:
-		'click .twitter':		'twitter'
+		'click .twitter':		'twitter',
+		'click .facebook':	'facebook'
 
 	initialize: ->
 		console.log 'feeds page initialized'
@@ -169,6 +189,7 @@ directory.views.FeedsPage = class FeedsPage extends Backbone.View
 		@storage = window.localStorage
 		@template = _.template directory.utils.templateLoader.get('feed-page')
 		@tweetTemplate = _.template directory.utils.templateLoader.get('tweet-template')
+		@facebookTemplate = _.template directory.utils.templateLoader.get('facebook-template')
 
 	render: (eventName) ->
 		console.log 'rendering started'
@@ -178,6 +199,39 @@ directory.views.FeedsPage = class FeedsPage extends Backbone.View
 			@iscroll.refresh()
 		, 100
 		@
+
+	facebook: (e) ->
+		# First check if we are logged in
+		FB.getLoginStatus (res)->
+			console.log("checking status", res)
+			if res.status != 'connected'
+				FB.login(null, {scope:'email, read_stream'}, (loginRes)->
+					console.log "logged in", loginRes
+				, (loginRes) ->
+					console.log("login failed", loginRes)
+				)
+		, (res) ->
+			console.log("failed")
+		# get the home screen
+		FB.api '/me/home', fields:'', (response)=>
+			#response also has paging information
+			news = response.data
+			console.log 'fetched news', response, news
+			@facebookSuccess(news)
+		e.preventDefault()
+
+	facebookSuccess: (news) ->
+		console.log 'facebook success', news
+		$('.networks').hide()
+		$('ul').empty()
+		for update in news
+			do (update) =>
+				#console.log 'update', typeof update
+				$('ul').append  @facebookTemplate({name:update.from.name, message:update.message})
+		setTimeout =>
+			console.log 'refresh'
+			@iscroll.refresh()
+		, 100
 
 	twitter: (e) ->
 		# this outputs the twitter timeline for the user
@@ -206,9 +260,10 @@ directory.views.FeedsPage = class FeedsPage extends Backbone.View
 		else
 			response = JSON.parse response
 		console.log 'tweets'
-		alert JSON.stringify response, null, ' '
+		#alert JSON.stringify response, null, ' '
 		console.log 'success'
 		$('.networks').hide()
+		$('ul').empty()
 		console.log 'hide networks'
 		# TODO should eventually build a model to deal with this
 		for tweet in response

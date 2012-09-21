@@ -291,6 +291,9 @@ body{
 .tableview-links li>a.detail-disclosure.tappable-active span{
 	background-position: top right;
 }
+.tableview-links li div.story{
+    max-width: 230px;
+}
 
 .link-text{
 	color: #385487;

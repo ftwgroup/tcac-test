@@ -98,12 +98,23 @@
 
 -(void)createEventWithUI:(NSMutableArray *)arguments withDict:(NSMutableDictionary *)options
 {
+    NSString *arg = [arguments objectAtIndex:0];
     // Get the event store object
     EKEventStore *store = [[EKEventStore alloc] init];
+    
+    // request permission to access the calendars, this will only show the
+    // pop-up if you are asking permission for the first time.
+    [store requestAccessToEntityType:EKEntityTypeEvent completion:^(BOOL granted, NSError *error) {
+        NSLog(@"Permission granted: %s", granted ? "true" : "false");
+        // You can return from a block like any other function
+    }];
     
     // Create the EditViewController
     EKEventEditViewController *controller = [[EKEventEditViewController alloc] init];
     controller.eventStore = store;
+    if (arg == @"INVALID"){
+        controller.event = [store eventWithIdentifier:arg];
+    }
     
     controller.editViewDelegate = self;
     
@@ -176,7 +187,40 @@
  
 }
  */
+-(void)findEvent:(NSMutableArray *)arguments withDict:(NSMutableDictionary *)options
+{
+    NSLog(@"In plugin method findEvent");
+    NSString *callback = [arguments objectAtIndex:0];
+    
+    EKEventStore *store = [[EKEventStore alloc] init];
+    
+    NSDate *startDate = [NSDate date];
+    NSDate *endDate = [NSDate distantFuture];
+    
+    NSPredicate *predicate = [store predicateForEventsWithStartDate:startDate endDate:endDate calendars:nil];
+    
+    NSArray *events = [store eventsMatchingPredicate:predicate];
+    NSString *js = nil;
 
+    NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
+    [dateFormatter setDateFormat:@"HH:mm"];
+    
+    if (events.count > 0) {
+        NSMutableArray *returnArray= [NSMutableArray arrayWithCapacity:events.count];
+        for (EKEvent *event in events) {
+            
+            NSDictionary *dict = [NSDictionary dictionaryWithObjectsAndKeys:event.eventIdentifier,@"identifier",[dateFormatter stringFromDate:event.startDate],@"startDate", event.title,@"title",nil];
+            [returnArray addObject:dict];
+        }
+        CDVPluginResult *result = [CDVPluginResult resultWithStatus:CDVCommandStatus_OK messageAsArray:returnArray];
+        js = [result toSuccessCallbackString:callback];
+    } else {
+        CDVPluginResult *result = [CDVPluginResult resultWithStatus:CDVCommandStatus_ERROR messageAsString:@"no events found"];
+        js = [result toErrorCallbackString:callback];
+    }
+    [self writeJavascript:js];
+    
+}
 -(void)getCalendarList:(NSMutableArray *)arguments withDict:(NSMutableDictionary *)options
 {
     NSLog(@"In plugin method getCalendarList");
